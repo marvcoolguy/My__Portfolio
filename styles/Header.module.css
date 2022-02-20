@@ -1,0 +1,147 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .header {
+    justify-content: space-evenly;
+    padding: 2rem 2rem 0;
+  }
+}
+
+.logo {
+  cursor: pointer;
+}
+
+/* Animate the lines */
+
+.hamBox {
+  z-index: 92;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid var(--navAqua);
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 700px) {
+  .hamBox {
+    display: none;
+  }
+}
+
+.hamLine,
+.hamLine::before,
+.hamLine::after {
+  width: 20px;
+  height: 3px;
+
+  background: var(--navAqua);
+  border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hamLine::before,
+.hamLine::after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.hamLine::before {
+  transform: translateY(-8px);
+}
+
+.hamLine::after {
+  transform: translateY(8px);
+}
+
+.MenuOpen .hamLine {
+  background: transparent;
+  transform: translateX(-50px);
+}
+
+.MenuOpen .hamLine::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.MenuOpen .hamLine::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* Nav Elements */
+.navList {
+  list-style: none;
+}
+
+.desktop__nav .navList {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .desktop__nav .navList {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.mobile__nav .navList {
+  background-color: var(--fadeBlack);
+  background: #1b1b1b;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 90;
+
+  width: min(65vw, 400px);
+  padding: 3rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__nav .navList li {
+  margin-top: 4rem;
+}
+
+.desktop__nav .navList li {
+  margin-left: 3rem;
+}
+
+.navList a {
+  color: var(--aqua);
+  font-size: 1.5rem;
+}
+
+.navList a.active,
+.navList a:hover {
+  color: var(--navAqua);
+}
+
+.mobile__nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop__nav a {
+  display: flex;
+  align-items: center;
+}

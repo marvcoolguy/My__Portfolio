@@ -1,0 +1,37 @@
+.footer {
+  background-color: #1b1b1b;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+}
+
+.footer__socials a {
+  margin-right: 1rem;
+}
+
+.footer__socials a svg {
+  stroke: var(--navAqua);
+}
+
+.footer__socials a svg:hover {
+  stroke: var(--pink);
+}
+
+.copy {
+  color: rgba(255, 255, 255, 0.514);
+}
