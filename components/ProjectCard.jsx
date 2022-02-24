@@ -4,6 +4,8 @@ import React from 'react';
 import pjt__styles from '../styles/Project.module.css';
 
 const ProjectCard = ({ item }) => {
+  const langTech = item.lang;
+
   return (
     <div className={pjt__styles.card}>
       <div className={pjt__styles.card__image}>
@@ -21,9 +23,9 @@ const ProjectCard = ({ item }) => {
 
         <div className={pjt__styles.lang}>
           <ul>
-            <li>Next Js</li>
-            <li>React</li>
-            <li>Vanilla Css 3</li>
+            {langTech.map((lang, index) => (
+              <li key={index}> {lang} </li>
+            ))}
           </ul>
         </div>
       </div>

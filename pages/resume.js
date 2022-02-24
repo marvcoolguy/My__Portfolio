@@ -1,29 +1,15 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-import { useContext } from 'react';
-
+import rs__styles from '../styles/resume.module.css';
 import Link from 'next/link';
 
-import { ProjectContext } from '../context/ProjectContext';
-
-import pjt__styles from '../styles/Project.module.css';
-
-import ProjectCard from '../components/ProjectCard';
-
-const project = () => {
-  const { projects } = useContext(ProjectContext);
-
+const Resume = () => {
   return (
-    <section className={pjt__styles.project}>
-      <div className="lettered__heading">My Projects</div>
+    <section className={rs__styles.resume}>
+      <div className="lettered__heading">My Resume</div>
 
-      <div className={pjt__styles.grid}>
-        {projects.map((item) => (
-          <ProjectCard item={item} key={item.id} />
-        ))}
-      </div>
+      <div className={rs__styles.grid}></div>
 
       <div className="bottom__nav">
-        <Link href="/about" passHref>
+        <Link href="/project" passHref>
           <a className="back">
             <svg
               width="40"
@@ -37,13 +23,13 @@ const project = () => {
                 fill="#FF69B4"
               />
             </svg>
-            <span>Back to about</span>
+            <span>Back to projects</span>
           </a>
         </Link>
 
-        <Link href="/resume" passHref>
+        <Link href="/contact" passHref>
           <a className="forward">
-            <span>Go to my resume</span>
+            <span>Go to Contact</span>
             <svg
               width="40"
               height="20"
@@ -63,4 +49,4 @@ const project = () => {
   );
 };
 
-export default project;
+export default Resume;

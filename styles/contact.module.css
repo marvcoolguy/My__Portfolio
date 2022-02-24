@@ -1,0 +1,93 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1024px;
+  margin: 3rem auto;
+  /* background-color: rgb(63, 54, 54); */
+}
+
+@media screen and (min-width: 960px) {
+  .grid {
+    flex-direction: unset;
+  }
+}
+
+.image {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  height: 250px;
+  width: 100%;
+}
+
+@media screen and (min-width: 960px) {
+  .image img {
+    height: 350px;
+  }
+}
+
+.form {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  .form {
+    flex: 1;
+    padding: unset;
+  }
+}
+
+.input__group,
+.text__area {
+  display: block;
+  outline: 1px solid var(--aqua);
+  border: none;
+  background: transparent;
+
+  width: 100%;
+  padding: 1rem;
+
+  border-radius: 0.5rem;
+  color: white;
+
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+
+  font-size: 1rem;
+}
+
+.input__group:focus,
+.text__area:focus {
+  outline: 1px solid var(--pink);
+}
+
+.input__group:-webkit-autofill,
+.input__group:-webkit-autofill:hover,
+.inpup__grouo:-webkit-autofill:focus,
+.input__group:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--black) inset !important;
+  box-shadow: 0 0 0 30px var(--black) inset !important;
+  color: white !important;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background: var(--aqua);
+  color: rgba(255, 255, 255, 0.8);
+
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.button:hover {
+  background: var(--navAqua);
+}

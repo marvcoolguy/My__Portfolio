@@ -8,7 +8,7 @@ export const ProjectProvider = (props) => {
       id: '001',
       name: 'My portfolio',
       description:
-        'I decided to give my old portfolio site a lick of paint and a new framework making it colourful and dynamic',
+        'I decided to give my old portfolio site a lick of paint and a new framework making it colourful and dynamic. Added some cool animations here and there. ',
       img: '/images/port.png',
       lang: ['NextJs', 'CSS 3'],
       link: 'https://loremipsum.com',
@@ -16,7 +16,8 @@ export const ProjectProvider = (props) => {
     {
       id: '002',
       name: 'Popular Cloned App',
-      description: 'A colourful portfolio',
+      description:
+        'I have always loved the look of this app and wanted to train my eyes on pixel perferct implementation',
       img: '/images/port.png',
       lang: ['NextJs', 'Tailwind'],
       link: 'https://loremipsum.com',
@@ -33,7 +34,8 @@ export const ProjectProvider = (props) => {
     {
       id: '004',
       name: 'Tastebud Cafe',
-      description: 'An e-commerce website for a coffee shop.',
+      description:
+        'An e-commerce website for a coffee shop. I learnt about Context api and needed a project to flex my newly acquired knowledge on.',
       img: '/images/coffee.png',
       lang: ['ReactJs', 'CSS 3'],
       link: 'https://loremipsum.com',
@@ -41,7 +43,8 @@ export const ProjectProvider = (props) => {
     {
       id: '005',
       name: 'Pokemon Search',
-      description: 'A colourful portfolio',
+      description:
+        'Working with third-party apis, I chose the fun themed pokemon search.',
       img: '/images/poke.png',
       lang: ['ReactJs', 'CSS 3'],
       link: 'https://loremipsum.com',
@@ -49,7 +52,8 @@ export const ProjectProvider = (props) => {
     {
       id: '006',
       name: 'Contact Manager',
-      description: 'A colourful portfolio',
+      description:
+        'This was my very first react project. I was learning along with documentations and videos and created this simple CRUD app.',
       img: '/images/contact.png',
       lang: ['ReactJs', 'CSS 3'],
       link: 'https://loremipsum.com',
@@ -57,7 +61,8 @@ export const ProjectProvider = (props) => {
     {
       id: '007',
       name: 'Calculator',
-      description: 'A colourful portfolio',
+      description:
+        'Using plain Javascript, my knowledge was expanded while building this simple calculator using neumorphic white theme',
       img: '/images/calculator.png',
       lang: ['Javascript', 'CSS 3', 'HTML 5'],
       link: 'https://loremipsum.com',
@@ -68,14 +73,6 @@ export const ProjectProvider = (props) => {
       description: 'A colourful portfolio',
       img: '/images/calculator.png',
       lang: ['CSS 3', 'HTML 5'],
-      link: 'https://loremipsum.com',
-    },
-    {
-      id: '009',
-      name: 'Music player',
-      description: 'A colourful portfolio',
-      img: '/images/music-player.png',
-      lang: ['ReactJs', 'CSS 3'],
       link: 'https://loremipsum.com',
     },
   ]);

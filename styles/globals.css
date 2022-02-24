@@ -38,20 +38,16 @@ a {
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* padding: 4rem 0; */
 }
 
+/* Global lettered head */
 .lettered__heading {
   font-size: 6rem;
   font-family: 'Sail', sans-serif;
   font-weight: 700;
 
-  opacity: 5%;
+  opacity: 2%;
   color: var(--white);
 
   position: fixed;
@@ -67,4 +63,60 @@ a {
   .lettered__heading {
     display: none;
   }
+}
+
+/* Global bottom nav styling */
+.bottom__nav {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 960px) {
+  .bottom__nav {
+    flex-direction: unset;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.bottom__nav a {
+  background-color: var(--black);
+
+  color: rgba(255, 255, 255, 0.616);
+  text-align: center;
+
+  padding: 1rem;
+  border-radius: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1rem;
+  max-width: 250px;
+  cursor: pointer;
+}
+
+.bottom__nav .forward {
+  box-shadow: 4px -4px 4px 4px rgba(0, 0, 0, 0.51);
+}
+
+.bottom__nav .back:hover {
+  color: var(--pink);
+  box-shadow: 4px -4px 4px 4px rgba(18, 17, 17, 0.6);
+}
+
+.bottom__nav .forward:hover {
+  color: var(--aqua);
+}
+
+.bottom__nav .back span {
+  margin-left: 15px;
+}
+
+.bottom__nav .forward span {
+  margin-right: 15px;
 }
